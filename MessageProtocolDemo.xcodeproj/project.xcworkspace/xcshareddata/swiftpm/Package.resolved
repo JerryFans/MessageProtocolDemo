@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "jfpopup",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JerryFans/JFPopup.git",
+      "state" : {
+        "revision" : "dea3a1e750a65554310b64e806f02e3076935c80",
+        "version" : "1.5.4"
+      }
+    },
+    {
+      "identity" : "jrbasekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JerryFans/JRBaseKit.git",
+      "state" : {
+        "revision" : "ee62235f59eae67c70fdc0f039aed90d3d4a9b99",
+        "version" : "1.1.2"
+      }
+    }
+  ],
+  "version" : 2
+}

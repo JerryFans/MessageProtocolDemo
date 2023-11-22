@@ -13,6 +13,8 @@
 		B42CEDB32AFB4E3A000CA32D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42CEDB12AFB4E3A000CA32D /* Main.storyboard */; };
 		B42CEDB52AFB4E3B000CA32D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42CEDB42AFB4E3B000CA32D /* Assets.xcassets */; };
 		B42CEDB82AFB4E3B000CA32D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42CEDB62AFB4E3B000CA32D /* LaunchScreen.storyboard */; };
+		B42CEDC02AFB4EA6000CA32D /* JFMessageCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42CEDBF2AFB4EA6000CA32D /* JFMessageCenter.swift */; };
+		B44E81A02B0B19A20097E5FF /* JFPopup in Frameworks */ = {isa = PBXBuildFile; productRef = B44E819F2B0B19A20097E5FF /* JFPopup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		B42CEDB42AFB4E3B000CA32D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42CEDB72AFB4E3B000CA32D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B42CEDB92AFB4E3B000CA32D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B42CEDBF2AFB4EA6000CA32D /* JFMessageCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFMessageCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B44E81A02B0B19A20097E5FF /* JFPopup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				B42CEDAB2AFB4E3A000CA32D /* AppDelegate.swift */,
 				B42CEDAD2AFB4E3A000CA32D /* SceneDelegate.swift */,
 				B42CEDAF2AFB4E3A000CA32D /* ViewController.swift */,
+				B42CEDBF2AFB4EA6000CA32D /* JFMessageCenter.swift */,
 				B42CEDB12AFB4E3A000CA32D /* Main.storyboard */,
 				B42CEDB42AFB4E3B000CA32D /* Assets.xcassets */,
 				B42CEDB62AFB4E3B000CA32D /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = MessageProtocolDemo;
+			packageProductDependencies = (
+				B44E819F2B0B19A20097E5FF /* JFPopup */,
+			);
 			productName = MessageProtocolDemo;
 			productReference = B42CEDA82AFB4E3A000CA32D /* MessageProtocolDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = B42CED9F2AFB4E3A000CA32D;
+			packageReferences = (
+				B44E819E2B0B19A20097E5FF /* XCRemoteSwiftPackageReference "JFPopup" */,
+			);
 			productRefGroup = B42CEDA92AFB4E3A000CA32D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +151,7 @@
 			files = (
 				B42CEDB02AFB4E3A000CA32D /* ViewController.swift in Sources */,
 				B42CEDAC2AFB4E3A000CA32D /* AppDelegate.swift in Sources */,
+				B42CEDC02AFB4EA6000CA32D /* JFMessageCenter.swift in Sources */,
 				B42CEDAE2AFB4E3A000CA32D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B44E819E2B0B19A20097E5FF /* XCRemoteSwiftPackageReference "JFPopup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JerryFans/JFPopup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B44E819F2B0B19A20097E5FF /* JFPopup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B44E819E2B0B19A20097E5FF /* XCRemoteSwiftPackageReference "JFPopup" */;
+			productName = JFPopup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B42CEDA02AFB4E3A000CA32D /* Project object */;
 }
